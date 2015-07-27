@@ -50,7 +50,7 @@ var rentApp = (function(window, document, $, L, undefined) {
     });
 
     loadAjax({url : 'data/labels.json', callback : addLabels});
-    loadAjax({url : 'data/berlin-zipcodes-data.topojson', callback : addTopoJson });
+    loadAjax({url : 'data/FFM_Mietpreise.topojson', callback : addTopoJson });
   }
 
   function getZoomByWindowSize() {
@@ -128,7 +128,7 @@ var rentApp = (function(window, document, $, L, undefined) {
   // set polygon style and update tooltip if user enters a polygon
   function enterPolygon(evt) {
     var layer = evt.target,
-      rentPrice = layer.feature.properties.randomRent;
+      rentPrice = layer.feature.properties.rent;
 
     // only update layer and tooltip if we have valid data  
     if (rentPrice > 0) {
@@ -162,7 +162,7 @@ var rentApp = (function(window, document, $, L, undefined) {
     topoLayer.eachLayer(function(layer) {
 
       var properties = layer.feature.properties,
-        rent = properties.randomRent * config.roomQms[currentRoomCount],
+        rent = properties.rent * config.roomQms[currentRoomCount],
         percentage = ((100 / currentSalary) * rent),
         color = getColorByPercentage(percentage);
 
@@ -189,10 +189,10 @@ var rentApp = (function(window, document, $, L, undefined) {
         properties = feature.properties;
 
       // set tooltip content
-      ui.$tooltipheadline.html('<strong>' + feature.id + ' </strong>' + properties.name);
+      ui.$tooltipheadline.html('<strong>' + feature.id + ' </strong>' + properties.stadtteil);
       ui.$tooltipqm.text(qms);
-      ui.$tooltipbezirk.text(properties.district);
-      ui.$tooltipRentPrice.text(properties.randomRent);
+   //   ui.$tooltipbezirk.text(properties.district);
+      ui.$tooltipRentPrice.text(properties.rent);
 
       ui.$tooltip.show();
       ui.$tooltip.css('border-left', ('4px solid ' + params.layer.options.fillColor));
