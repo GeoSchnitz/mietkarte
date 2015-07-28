@@ -45,8 +45,8 @@ var rentApp = (function(window, document, $, L, undefined) {
       zoom: getZoomByWindowSize(),
       zoomControl: false,
       maxBounds: config.bounds,
-      minZoom: 9,
-      maxZoom: 12,
+      minZoom: 10,
+      maxZoom: 14,
 	  attribution: '<a href="http://www.twitter.com/geoschnitz" target="_blank">GeoSchnitz</a> |  MapData \xa9 <a href="http://www.offenedaten.frankfurt.de/">Offene Daten Frankfurt</a> | &copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
     });
 // add OSM Tile
