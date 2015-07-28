@@ -542,5 +542,9 @@ li.nodata {
         overflow: auto;
         max-height: 350px !important;
     }
+	.credits {
+        display: none;
+}
+
 }
 
