@@ -1,6 +1,6 @@
 var config = {
   center: [50.12, 8.66],
-  bounds: L.latLngBounds([50.01, 8.44,], [50.24, 8.82]),
+  bounds: L.latLngBounds([50.00, 8.48,], [50.23, 8.80]),
   minSalary: 0,
   maxSalary: 5000,
   startSalary: 1650,

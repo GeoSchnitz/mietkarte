@@ -47,11 +47,17 @@ var rentApp = (function(window, document, $, L, undefined) {
       maxBounds: config.bounds,
       minZoom: 9,
       maxZoom: 12,
+	  attribution:'<a href="http://www.twitter.com/geoschnitz" target="_blank">GeoSchnitz</a> |  MapData \xa9 <a href="http://www.offenedaten.frankfurt.de/">Offene Daten Frankfurt</a> | &copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
     });
-
-    loadAjax({url : 'data/labels.json', callback : addLabels});
+// add OSM Tile
+  L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png', { 
+	}).addTo(map);
+    
+	loadAjax({url : 'data/labels.json', callback : addLabels});
     loadAjax({url : 'data/FFM_Mietpreise.topojson', callback : addTopoJson });
   }
+  
+
 
   function getZoomByWindowSize() {
     var mapZoom = 11,
