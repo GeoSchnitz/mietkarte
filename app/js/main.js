@@ -45,9 +45,8 @@ var rentApp = (function(window, document, $, L, undefined) {
       zoom: getZoomByWindowSize(),
       zoomControl: false,
       maxBounds: config.bounds,
-      minZoom: 10,
-      maxZoom: 14,
-	  attribution: '<a href="http://www.twitter.com/geoschnitz" target="_blank">GeoSchnitz</a> |  MapData \xa9 <a href="http://www.offenedaten.frankfurt.de/">Offene Daten Frankfurt</a> | &copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
+      minZoom: 9,
+      maxZoom: 12,
     });
 // add OSM Tile
 //  L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png', { 
@@ -55,8 +54,7 @@ var rentApp = (function(window, document, $, L, undefined) {
 //Add Mapbox Background
 	  L.tileLayer('http://api.mapbox.com/v4/mapbox.light/{z}/{x}/{y}.png?access_token=pk.eyJ1IjoiZ2Vvc2Nobml0eiIsImEiOiI3YTk5MmNjMjUxZGI0YTY2ODRmYjdjMWYzOGRmYmYyMCJ9.Q7T2y7e_r0qm4oif4FWqNg', { 
 	}).addTo(map);
-	
-    
+	    
 	loadAjax({url : 'data/labels.json', callback : addLabels});
     loadAjax({url : 'data/Mietpreise_warm.topojson', callback : addTopoJson });
   }
@@ -68,9 +66,9 @@ var rentApp = (function(window, document, $, L, undefined) {
       screenWidth = window.innerWidth;
 
     if (featureSupport.isSmartphone || screenWidth < 700) {
-      mapZoom = 10;
+      mapZoom = 9;
     } else if (screenWidth < 1100) {
-      mapZoom = 11;
+      mapZoom = 10;
     } else if (screenWidth > 2000) {
       mapZoom = 12;
     }
