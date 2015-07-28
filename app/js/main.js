@@ -45,7 +45,7 @@ var rentApp = (function(window, document, $, L, undefined) {
       zoom: getZoomByWindowSize(),
       zoomControl: false,
       maxBounds: config.bounds,
-      minZoom: 8,
+      minZoom: 9,
       maxZoom: 12,
 	  attribution: '<a href="http://www.twitter.com/geoschnitz" target="_blank">GeoSchnitz</a> |  MapData \xa9 <a href="http://www.offenedaten.frankfurt.de/">Offene Daten Frankfurt</a> | &copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
     });
@@ -64,13 +64,13 @@ var rentApp = (function(window, document, $, L, undefined) {
 
 
   function getZoomByWindowSize() {
-    var mapZoom = 12,
+    var mapZoom = 11,
       screenWidth = window.innerWidth;
 
     if (featureSupport.isSmartphone || screenWidth < 700) {
-      mapZoom = 9;
-    } else if (screenWidth < 1100) {
       mapZoom = 10;
+    } else if (screenWidth < 1100) {
+      mapZoom = 11;
     } else if (screenWidth > 2000) {
       mapZoom = 12;
     }

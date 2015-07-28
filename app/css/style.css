@@ -570,6 +570,7 @@ li.nodata {
 	}
 	.header .small-screen-only {
     display: block;
+	font-size: 6px;
 	}
 	
 }
