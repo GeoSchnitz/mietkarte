@@ -568,9 +568,6 @@ li.nodata {
 	.header .headline, .hide-on-mobile {
     display: none;
 	}
-	.header .small-screen-only {
-    display: block;
-	font-size: 6px;
-	}
+
 	
 }
