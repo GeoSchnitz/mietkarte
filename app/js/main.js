@@ -53,7 +53,7 @@ var rentApp = (function(window, document, $, L, undefined) {
 //  L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png', { 
 //	}).addTo(map);
 //Add Mapbox Background
-	  L.tileLayer('http://api.mapbox.com/v4/mapbox.dark/{z}/{x}/{y}.{format}?access_token=pk.eyJ1IjoiZ2Vvc2Nobml0eiIsImEiOiI3YTk5MmNjMjUxZGI0YTY2ODRmYjdjMWYzOGRmYmYyMCJ9.Q7T2y7e_r0qm4oif4FWqNg', { 
+	  L.tileLayer('http://api.mapbox.com/v4/mapbox.dark/{z}/{x}/{y}.png?access_token=pk.eyJ1IjoiZ2Vvc2Nobml0eiIsImEiOiI3YTk5MmNjMjUxZGI0YTY2ODRmYjdjMWYzOGRmYmYyMCJ9.Q7T2y7e_r0qm4oif4FWqNg', { 
 	}).addTo(map);
 	
     
