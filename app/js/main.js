@@ -68,7 +68,7 @@ var rentApp = (function(window, document, $, L, undefined) {
     if (featureSupport.isSmartphone || screenWidth < 700) {
       mapZoom = 10;
     } else if (screenWidth < 1100) {
-      mapZoom = 12;
+      mapZoom = 11;
     } else if (screenWidth > 2000) {
       mapZoom = 13;
     }
