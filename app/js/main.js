@@ -46,7 +46,7 @@ var rentApp = (function(window, document, $, L, undefined) {
       zoomControl: false,
       maxBounds: config.bounds,
       minZoom: 9,
-      maxZoom: 12,
+      maxZoom: 14,
     });
 // add OSM Tile
 //  L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png', { 
@@ -66,9 +66,9 @@ var rentApp = (function(window, document, $, L, undefined) {
       screenWidth = window.innerWidth;
 
     if (featureSupport.isSmartphone || screenWidth < 700) {
-      mapZoom = 9;
-    } else if (screenWidth < 1100) {
       mapZoom = 10;
+    } else if (screenWidth < 1100) {
+      mapZoom = 11;
     } else if (screenWidth > 2000) {
       mapZoom = 12;
     }

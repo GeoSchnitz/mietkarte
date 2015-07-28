@@ -123,6 +123,17 @@ ul {
     z-index: 99;
     width: 195px;
 }
+
+.credits {
+    background: rgba(255, 255, 255, 0.75) none repeat scroll 0 0;
+    bottom: 0;
+    float: none;
+    font: 11px/1.5 "Helvetica Neue",Arial,Helvetica,sans-serif;
+    left: 0;
+    position: absolute;
+    z-index: 9999;
+}
+
 /*****************
 
  Map
