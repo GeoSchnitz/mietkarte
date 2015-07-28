@@ -31,7 +31,6 @@
     font-size: 11px;
 }
 
-
 /*icomoon*/
 @font-face {
     font-family: 'icomoon';
@@ -565,7 +564,14 @@ li.nodata {
         overflow: auto;
         max-height: 350px !important;
     }
-	.header .headline, .hide-on-mobile {
+	/*****************
+
+.header .headline, .hide-on-mobile {
     display: none;
 	}
+*****************/
+	.hide-on-mobile {
+    display: none;
+	}
+	
 }
