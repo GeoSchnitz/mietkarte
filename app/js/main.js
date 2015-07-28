@@ -50,8 +50,12 @@ var rentApp = (function(window, document, $, L, undefined) {
 	  attribution:'<a href="http://www.twitter.com/geoschnitz" target="_blank">GeoSchnitz</a> |  MapData \xa9 <a href="http://www.offenedaten.frankfurt.de/">Offene Daten Frankfurt</a> | &copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
     });
 // add OSM Tile
-  L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png', { 
+//  L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png', { 
+//	}).addTo(map);
+//Add Mapbox Background
+	  L.tileLayer('http://api.mapbox.com/v4/mapbox.dark/{z}/{x}/{y}.{format}?access_token=pk.eyJ1IjoiZ2Vvc2Nobml0eiIsImEiOiI3YTk5MmNjMjUxZGI0YTY2ODRmYjdjMWYzOGRmYmYyMCJ9.Q7T2y7e_r0qm4oif4FWqNg', { 
 	}).addTo(map);
+	
     
 	loadAjax({url : 'data/labels.json', callback : addLabels});
     loadAjax({url : 'data/FFM_Mietpreise.topojson', callback : addTopoJson });
