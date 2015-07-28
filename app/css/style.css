@@ -435,6 +435,12 @@ li.nodata {
     .legend li.nodata {
         width: 90px;
     }
+	.header h1 {
+    float: left;
+    font-size: 6px;
+    line-height: 8px;
+    font-weight: small;
+	}
 }
 @media all and (max-width: 710px) {
     .divider {
@@ -450,7 +456,8 @@ li.nodata {
         padding: 5px 0 10px 20px;
     }
     .header h1 {
-        font-size: 16px;
+        font-size: 8px;
+		display: none;
     }
     .box {
         position: relative;
@@ -544,7 +551,6 @@ li.nodata {
     }
 	.credits {
         display: none;
-}
-
+	}
 }
 
