@@ -6,27 +6,27 @@
 <head>
 	<meta charset="UTF-8">
 
-	<title>Neuvermietungen Frankfurt am Main - Wo man sich Frankfurt noch leisten kann, oder eben nicht</title>
-    
+	<title>Neuvermietungen Frankfurt am Main - Wo man sich Frankfurt noch leisten kann, oder eben nicht?</title>
+   
     <meta name="robots" content="index, follow">    
     <meta name="description" content="">
 	<meta name="keywords" content="Frankfurt, Frankfurt am Main, FFM, Mieten, Mietwohnungen, Wohnungen, Rent, Rental, Map, Karte, interaktiv, Neuvermietung, Wohnung, Einkommen, Gehalt, Prozent, Mietkarte, Bornheim, Nordend, Sachsenhausen, Immobilien, Riedberg">
     <meta name="news_keywords" content="Frankfurt, FFM, Mieten, Mietwohnungen, Wohnungen, Rent, Rental, Map, Karte, interaktiv, Neuvermietung, Wohnung, Einkommen, Gehalt, Prozent, Mietkarte, Bornheim, Nordend, Sachsenhausen, Immobilien, Riedberg">
-     <meta name="description" content="Über die hohen Mieten in Frankfurt am Main wird schon lange viel und umfassend diskutiert. Diese interaktive Karte, inspieriert am Projekt der Berliner Morgenpost für Berlin, zeigt auf Stadtteilebene genau, wo man sich in Frankfurt eine Wohnung leisten kann.">
-    <meta itemprop="description" content="Über die hohen Mieten in Frankfurt am Main wird schon lange viel und umfassend diskutiert. Diese interaktive Karte, inspieriert am Projekt der Berliner Morgenpost für Berlin, zeigt auf Stadtteilebene genau, wo man sich in Frankfurt eine Wohnung leisten kann.">
+     <meta name="description" content="Über die hohen Mieten in Frankfurt am Main wird schon lange viel und umfassend diskutiert. Diese interaktive Karte, inspiriert am Projekt der Berliner Morgenpost für Berlin, zeigt auf Stadtteilebene genau, wo man sich in Frankfurt eine Wohnung leisten kann.">
+    <meta itemprop="description" content="Über die hohen Mieten in Frankfurt am Main wird schon lange viel und umfassend diskutiert. Diese interaktive Karte, inspiriert am Projekt der Berliner Morgenpost für Berlin, zeigt auf Stadtteilebene genau, wo man sich in Frankfurt eine Wohnung leisten kann.">
     <!-- FACEBOOK TAGS -->
     <meta property="og:title" content="Interaktive Mietkarte: Wo Sie sich Frankfurt noch leisten können" />
     <meta property="og:type" content="article" />
     <meta property="og:url" content="http://mietkarteffm.geoschnitz.de" />
     <meta property="og:image" content="http://mietkarteffm.geoschnitz.de/img/thumb_mietkarte.png" />
     <meta property="og:site_name" content="Geoschnitz" />
-    <meta property="og:description" content="Über die hohen Mieten in Frankfurt am Main wird schon lange viel und umfassend diskutiert. Diese interaktive Karte, inspieriert am Projekt der Berliner Morgenpost für Berlin, zeigt auf Stadtteilebene genau, wo man sich in Frankfurt eine Wohnung leisten kann." />
+    <meta property="og:description" content="Über die hohen Mieten in Frankfurt am Main wird schon lange viel und umfassend diskutiert. Diese interaktive Karte, inspiriert am Projekt der Berliner Morgenpost für Berlin, zeigt auf Stadtteilebene genau, wo man sich in Frankfurt eine Wohnung leisten kann." />
 
     <!-- TWITTER TAGS -->
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:site" content="@geoschnitz">
     <meta name="twitter:title" content="Interaktive Mietkarte: Wo Sie sich Frankfurt noch leisten können">
-    <meta name="twitter:description" content="Über die hohen Mieten in Frankfurt am Main wird schon lange viel und umfassend diskutiert. Diese interaktive Karte, inspieriert am Projekt der Berliner Morgenpost für Berlin, zeigt auf Stadtteilebene genau, wo man sich in Frankfurt eine Wohnung leisten kann.">
+    <meta name="twitter:description" content="Über die hohen Mieten in Frankfurt am Main wird schon lange viel und umfassend diskutiert. Diese interaktive Karte, inspiriert am Projekt der Berliner Morgenpost für Berlin, zeigt auf Stadtteilebene genau, wo man sich in Frankfurt eine Wohnung leisten kann.">
     <meta name="twitter:image:src" content="http://mietkarteffm.geoschnitz.de/img/thumb_mietkarte.png">
 	
 	
@@ -60,6 +60,7 @@
 			<div class="bezirk"></div> 
 			<div class="tooltip-text">
                 <strong>~ Mietpreis (warm): <span class="rent-price"></span> € / m²</strong>
+				<p>Gesamtmietpreis (warm): <span class="total-price"></span> €</p>
 				<p>Quelle Kaltmiete: <a target="_blank" href="https://www.immowelt.de/immobilienpreise">Immowelt 2016</a></p>
 				<p>Anteil Warmmiete: 2,20 €/m²</p>
              </div>
@@ -134,19 +135,21 @@
 		<h2>Datengrundlage:</h2>
 		<h3>Immowelt (Mietpreise auf Stadtteilebene) </h3>
 		<p>Die <a target="_blank" href="http://www.immowelt.de">Firma Immowelt</a> bietet auf ihrem Portal eine vergleichende Analyse der <a target="_blank" href="http://www.immowelt.de/immobilienpreise/)">Mietpreise auf Stadtteilebene</a> Diese Daten wurden aufbereitet und für die Mietkarte verwendet.</p>
+		<p>Mietpreise wurde direkt von Immowelt übernommen. Wenn möglich wurde der aktuelle Wert von April 2016 verwendet, sofern hier kein nachvollziehbarer Wert vorlag wurde auf einen der vergangenen Monate zurückgegriffen. Nur für den Stadtteil Riederwald lagen keine aktuellen Daten vor, hier wurde ein halbwegs aussagekräftig erscheinender Wert aus Mai 2014 verwendet. Ursächlich ist hier der geringe Anteil an in Immobilienportalen angebotenen Wohnungen im Stadtteil.</p>
+		
 		<h3>Stadtteilgrenzen</h3>
 		<p> Die Stadtteilgrenzen gibt es dankenswerterweise im <a target="_blank" href="http://www.offenedaten.frankfurt.de/">Frankfurter Open Data Portal</a> zum freien Download. </p>
 		<p>Was in der aktuellen Berechnung noch fehlt ist eine genaue Angabe für den Anteil der Warmmiete am Einkommen für die Stadt Frankfurt.</p>
 		<h2>Weiterführende Links</h2>
 		<h3>Blogpost zur Erstellung der Anwendung: </h3>
-		<p><a target="_blank" href="http://www.geoschnitz.de/mietkarte-frankfurt-am-main">GeoSchnitz Blog über die Erstellung der Frankfurt Mietkarte (in Arbeit)</a> </p>
+		<p><a target="_blank" href="http://www.geoschnitz.de/">GeoSchnitz Blog über die Erstellung der Frankfurt Mietkarte (in Arbeit)</a> </p>
 		<h3>Infos der Berliner Morgenpost:</h3>
 		<p><a target="_blank" href="http://www.morgenpost.de/berlin/article135091718/Berliner-geben-so-viel-fuer-die-Miete-aus-wie-Muenchner.html">Berliner Mieten im Vergleich</a> </p>
 		<h3>GitHub</h3>
 		<p><a target="_blank" href="https://github.com/GeoSchnitz/mietkarte">Frankfurt Mietkarte bei GitHub</a> </p>
 		<p><a target="_blank" href="https://github.com/berlinermorgenpost/mietkarte">Berliner Mietkarte bei GitHub</a> </p>
-		<p>Von <a target="_blank" href="http://www.twitter.com/geoschnitz">Benjamin Schnitzer</a> Datenquellen: <a target="_blank" href="http://www.immowelt.de/immobilienpreise/detail.aspx?">Immowelt.de 2016</a> & <a target="_blank" href="http://www.offenedaten.frankfurt.de/">Offene Daten Frankfurt</a> & <a href="http://mapbox.com/about/maps" target="_blank">Mapbox</a> |  Map data <a href="http://www.openstreetmap.org">OpenStreetMap contributors</a> | Inspiration, Code & Dank: <a target="_blank" href="http://interaktiv.morgenpost.de/mietkarte-berlin">Interaktiv @ Berliner Morgenpost </a> und <a target="_blank" href="https://twitter.com/juliustroeger">Julius Tröger und Team</a> </p>
-		
+		<p>Von <a target="_blank" href="http://www.twitter.com/geoschnitz">Benjamin Schnitzer</a> Datenquellen: <a target="_blank" href="http://www.immowelt.de/immobilienpreise/detail.aspx?">Immowelt.de 2016</a> & <a target="_blank" href="http://www.offenedaten.frankfurt.de/dataset/frankfurter-stadtteilgrenzen-fur-gis-systeme">Stadtteilgrenzen FFM</a> <a target="_blank" href="https://www.govdata.de/dl-de/by-2-0"> dl-de/by-2-0</a> & <a href="http://mapbox.com/about/maps" target="_blank">Mapbox</a> |  Map data <a href="http://www.openstreetmap.org">OpenStreetMap contributors</a> | Inspiration, Code & Dank: <a target="_blank" href="http://interaktiv.morgenpost.de/mietkarte-berlin">Interaktiv @ Berliner Morgenpost </a> und <a target="_blank" href="https://twitter.com/juliustroeger">Julius Tröger und Team</a> </p>
+
         </div>  
     </div>
     <script src="bower_components/jquery/dist/jquery.min.js"></script>
