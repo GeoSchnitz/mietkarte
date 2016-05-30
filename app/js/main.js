@@ -196,15 +196,14 @@ var rentApp = (function(window, document, $, L, undefined) {
     var qms = config.roomQms[currentRoomCount],
         feature = params.layer.feature,
         properties = feature.properties;
-    var tot_price = Math.round(properties.Warmmiete_FFM_Immowelt_2016 * config.roomQms[currentRoomCount]);
+    var tot_price = Math.round(properties.Kaltmiete_FFM_Immowelt_2015 * config.roomQms[currentRoomCount]);
       // set tooltip content
   //    ui.$tooltipheadline.html('<strong>' + feature.id + ' </strong>' + properties.stadtteil);
-      ui.$tooltipheadline.html('<strong> Frankfurt </strong>' + properties.STTLNAME);
+      ui.$tooltipheadline.html('Frankfurt <strong> ' + properties.STTLNAME + '</strong>');
       ui.$tooltipqm.text(qms);
    //   ui.$tooltipbezirk.text(properties.district);
       ui.$tooltipRentPrice.text(properties.Warmmiete_FFM_Immowelt_2016);
       ui.$tooltipTotalPrice.text(tot_price);
-
       ui.$tooltip.show();
       ui.$tooltip.css('border-left', ('4px solid ' + params.layer.options.fillColor));
 
