@@ -56,7 +56,7 @@ var rentApp = (function(window, document, $, L, undefined) {
 	}).addTo(map);
 	    
 	loadAjax({url : 'data/labels.json', callback : addLabels});
-    loadAjax({url : 'data/Mietpreise_warm.topojson', callback : addTopoJson });
+    loadAjax({url : 'data/Immo_Mieten_FFM2016.topojson', callback : addTopoJson });
   }
   
 
@@ -111,7 +111,7 @@ var rentApp = (function(window, document, $, L, undefined) {
     });
   }
 
-  // add labels that are stored in data/labels.json
+  // add labels that are stored in data/labels.json - not available for Frankfurt 
   function addLabels(labels) {
     labels.forEach(function(label, i) {
       var myIcon = L.divIcon({
@@ -136,7 +136,7 @@ var rentApp = (function(window, document, $, L, undefined) {
   // set polygon style and update tooltip if user enters a polygon
   function enterPolygon(evt) {
     var layer = evt.target,
-      rentPrice = layer.feature.properties.Mietpreise_Frankfurt_am_Main_Stadtteile_2015_rent_warm;
+      rentPrice = layer.feature.properties.Warmmiete_FFM_Immowelt_2016;
 
     // only update layer and tooltip if we have valid data  
     if (rentPrice > 0) {
@@ -170,7 +170,7 @@ var rentApp = (function(window, document, $, L, undefined) {
     topoLayer.eachLayer(function(layer) {
 
       var properties = layer.feature.properties,
-        rent = properties.Mietpreise_Frankfurt_am_Main_Stadtteile_2015_rent_warm * config.roomQms[currentRoomCount],
+        rent = properties.Warmmiete_FFM_Immowelt_2016 * config.roomQms[currentRoomCount],
         percentage = ((100 / currentSalary) * rent),
         color = getColorByPercentage(percentage);
 
@@ -201,7 +201,7 @@ var rentApp = (function(window, document, $, L, undefined) {
       ui.$tooltipheadline.html('<strong> Frankfurt </strong>' + properties.STTLNAME);
       ui.$tooltipqm.text(qms);
    //   ui.$tooltipbezirk.text(properties.district);
-      ui.$tooltipRentPrice.text(properties.Mietpreise_Frankfurt_am_Main_Stadtteile_2015_rent_warm);
+      ui.$tooltipRentPrice.text(properties.Warmmiete_FFM_Immowelt_2016);
 
       ui.$tooltip.show();
       ui.$tooltip.css('border-left', ('4px solid ' + params.layer.options.fillColor));
