@@ -37,6 +37,9 @@
 	<link rel="stylesheet" type="text/css" href="bower_components/nouislider/jquery.nouislider.css" />
 	<link rel="stylesheet" type="text/css" href="css/style.css" />
 
+	<!-- Chardin JS -->
+	<link rel="stylesheet" type="text/css" href="css/chardinjs.css" />
+
 </head>
 <body>
 
@@ -68,13 +71,13 @@
 
 		<div id="map"></div>
 
-        <div class="sidebar box">
+        <div class="sidebar box" data-intro="An awesome 18th-century painter, who found beauty in everyday, common things." data-position="right">
 			<div class="subline">
                 Ihr <strong>Haushaltseinkommen</strong><br /><span class="light hide-on-mobile">monatlich netto verfügbar</span>
             </div>
 			<div class="slider-output "><span></span> Euro</div>
 			<div id="slider">
-				<div class="slider-values max hide-on-mobile">- 8.000 Euro</div>
+				<div class="slider-values max hide-on-mobile">- 7.000 Euro</div>
 				<div class="slider-values min hide-on-mobile">- 0 Euro</div>
 			</div> 
 		</div>
@@ -161,6 +164,11 @@
     <script src="js/topojson-leaflet.js"></script>
     <script src="js/config.js"></script>
 	<script src="js/main.js"></script>
+	<script src="js/chardinjs.min.js"></script>
+	
+	<script type="text/javascript">
+	$('body').chardinJs('start')
+	</script>
 	
 		<!-- Piwik -->
 	<script type="text/javascript">
