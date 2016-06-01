@@ -10,8 +10,7 @@ Basis source code [Berlin rents map](http://morgenpost.de/mietkarte).
 
 ##### [Application Frankfurt](http://mietkarteffm.geoschnitz.de/)
 
-![Berlin rents map](http://interaktiv.morgenpost.de/mietkarte-berlin/img/thumb_mietkarte.jpg)
-
+![Frankfurt rents map](http://www.geoschnitz.de/content/images/2016/06/2016-06-01_13-23-14.gif)
 
 
 ## Installation
