@@ -95,7 +95,7 @@
         </div>
 
 
-		<div class="legend"  data-intro="Klicken Sie auf die Karte zum Fortfahren <br><br> Anteil der Warmmiete an Ihrem Haushaltseinkommen in Prozent" data-position="top">
+		<div class="legend"  data-intro="Bitte klicken Sie in die Karte zum Fortfahren <br><br> Anteil der Warmmiete an Ihrem Haushaltseinkommen in Prozent" data-position="top">
     		<div class="subline">
                 <div>Anteil der Warmmiete an Ihrem Haushaltseinkommen</div>
             </div>
@@ -171,7 +171,13 @@
 	<script src="js/chardinjs.min.js"></script>
 	
 	<script type="text/javascript">
-	$('body').chardinJs('start')
+	if ( $(window).width() > 739) {     
+  //Add your javascript for large screens here
+  	$('body').chardinJs('start')
+	}
+	else {
+  //Add your javascript for small screens here
+	}
 	</script>
 	
 		<!-- Piwik -->
