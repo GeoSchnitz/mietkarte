@@ -1,9 +1,14 @@
-# Interactive map
+# Interactive map for Frankfurt am Main - based on Berlin Mietmap
 
-Source code of our [Berlin rents map](http://morgenpost.de/mietkarte).
-This repository does not contain real data, but **random data** for coloring the polygons.
+[Dokumentation at](http://www.geoschnitz.de/mietkarte-frankfurt-am-main/)
 
-##### [Demo](http://berlinermorgenpost.github.io/mietkarte/)
+Basis source code [Berlin rents map](http://morgenpost.de/mietkarte).
+
+
+##### [Demo Berlin](http://berlinermorgenpost.github.io/mietkarte/)
+
+
+##### [Application Frankfurt](http://mietkarteffm.geoschnitz.de/)
 
 ![Berlin rents map](http://interaktiv.morgenpost.de/mietkarte-berlin/img/thumb_mietkarte.jpg)
 
@@ -43,21 +48,22 @@ The map is based on [Leaflet](http://leafletjs.com). Moreover we use [topojson.j
 
 ##### Data
 We have two files that contain data we use in our application
-
-* `app/data/berlin-zipcodes-data.topojson` contains the geodata and the data (id,name,district,randomRent) we use in our tooltips
-* `app/data/labels.json` contains the labels we display on our map
+* [Stadtteilgrenzen](http://www.offenedaten.frankfurt.de/)
+* [Mietpreise](https://www.immowelt.de/)
 
 ##### UI/General
 We use this libraries for our UI
 
 * [jQuery](http://jquery.com)
 * [noUiSlider](http://refreshless.com/nouislider/)
+* [chardin](http://heelhook.github.io/chardin.js/)
 
-
-### Contributors
+### Contributors - Berlin
 * [Moritz Klack](http://github.com/moklick)
 * [Julius Tröger](http://twitter.com/juliustroeger)
 
+### Contributors - Frankfurt
+* [Geoschnitz](http://twitter.com/geoschnitz)
 
 ### Inspiration 
 [London’s renting crisis](http://www.ft.com/intl/cms/s/2/ad4ef6a4-503d-11e3-befe-00144feabdc0.html)
